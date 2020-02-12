@@ -1,0 +1,3 @@
+python setting
+vimrc setting
+ec2 swap setting
