@@ -1,3 +1,8 @@
 python setting
+
 vimrc setting
+erase vim-tiny
+install vim, vundle
+set color 256
+
 ec2 swap setting
