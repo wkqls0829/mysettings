@@ -1,8 +1,13 @@
 python setting
 
+if aws swapsetting
+
 vimrc setting
 erase vim-tiny
 install vim, vundle
 set color 256
+
+ycmd install dependencies and core
+ycm extra conf .py
 
 ec2 swap setting
