@@ -21,6 +21,7 @@ Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'Valloric/YouCompleteMe', { 'do': 'python3 ./install.py --clang-completer --go-completer --rust-completer'}
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'Raimondi/delimitMate'
 " Plugin 'terryma/vim-multiple-cursors'
 " Plugin 'git://git.wincent.com/ command-t.git'
 
@@ -52,6 +53,10 @@ nnoremap <space> za
 "	\ set fileformat=unix
 
 " au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
 
 let python_highlight_all=1
 syntax on
@@ -104,3 +109,5 @@ let g:UltiSnpsSnippetDirectories = ['UltiSnips']
 " let g:multi_cursor_prev_key            = '<C-p>'
 " let g:multi_cursor_skip_key            = '<C-x>'
 " let g:multi_cursor_quit_key            = '<Esc>'
+
+let delimitMate_expand_cr=1
