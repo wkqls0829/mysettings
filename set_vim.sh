@@ -16,7 +16,7 @@ sudo apt install -y build-essential cmake python3-dev
 sudo apt install -y clang
 
 #copy .vimrc
-cp ~/mysettings/.vimrc ~/
+cp .vimrc ~/
 vim +PluginInstall +qall
 git submodule update --init --recursive
 
