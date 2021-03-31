@@ -2,14 +2,14 @@
 echo "Starting vim installation..."
 
 #removing vim-tiny and installing vim
-#sudo apt remove -y vim-tiny
-#sudo apt install -y vim-nox
+sudo apt remove -y vim-tiny
+sudo apt install -y vim-nox
 
 #install vim vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 #set color 256
-setenv TERM xterm-256color
+export TERM=xterm-256color
 
 #install ycmd settings
 sudo apt install -y build-essential cmake python3-dev
@@ -25,7 +25,7 @@ git submodule update --init --recursive
 
 #get configuration
 git clone https://github.com/ycm-core/ycmd.git
-cp /ycmd/.ycm_extra_conf.py ~/.vim/
+cp ycmd/.ycm_extra_conf.py ~/.vim/
 
 echo | gcc -std=c++14 -v -E -x c++ -
 echo | clang -std=c++14 -stdlib=libc++ -v -E -x c++ -
