@@ -29,3 +29,8 @@ cp ycmd/.ycm_extra_conf.py ~/.vim/
 
 echo | gcc -std=c++14 -v -E -x c++ -
 echo | clang -std=c++14 -stdlib=libc++ -v -E -x c++ -
+
+
+#set color for zenburn
+export TERM=xterm-256color
+echo 'export TERM=xterm-256color' >> ~/.bashrc
